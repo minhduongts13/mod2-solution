@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.Header {
+    text-align: center;
+    padding: 15px;
+}
+
+.row {
+    padding: 15px 0px 15px 15px;
+}
+
+.col {
+    position: relative;
+    background-color: rgb(155, 154, 154);
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+.album_title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.album_title#Fearless {
+    background-color: yellow;
+}
+
+.album_title#Speak_Now{
+    background-color: violet;
+}
+
+.album_title#Red{
+    background-color: red;
+}
+
+.description {
+    padding: 10px;
+    margin-top: 35px;
+}
+
+@media (min-width: 992px){
+    .col-lg-4 {
+        width: calc(33.33% - 10px);
+    }
+}
+
+@media (max-width: 991px) AND (min-width: 768px){
+    .col-md-6 {
+        width: calc(50% - 10px);
+    }
+    .col-md-12 {
+        width: calc(100% - 10px);
+    }
+}
+
+@media (max-width: 767px){
+    .col-sm-12 {
+        width: calc(100% - 10px);
+    }
+}
